@@ -65,7 +65,7 @@ class GithubUserProviderTest extends TestCase {
 	$userLoaded = $githubUserProvider->loadUserByUsername('toto');
 	
 	$userParams = new User(
-            $t_userParams['login'],
+            $t_userParams['login'].'AJOUT TEXTE POUR TESTER LE PLANTAGE DE TEST',
             $t_userParams['name'],
             $t_userParams['email'],
             $t_userParams['avatar_url'],
